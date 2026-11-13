@@ -14,11 +14,11 @@ export default function ExcuseGeneratorHeader({
           <Terminal className="w-5 h-5 stroke-[2.5]" />
         </div>
         <div>
-          <h1 className="text-xl font-black tracking-tight uppercase">
+          <p className="text-xl font-black tracking-tight uppercase text-white">
             It Worked On My Machine™
-          </h1>
+          </p>
           <p className="text-xs text-zinc-400 font-mono">
-            Incident Excuse &amp; Official Liability Waiver Generator
+            Incident excuse and official liability waiver generator
           </p>
         </div>
       </div>
