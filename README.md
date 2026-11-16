@@ -1,32 +1,35 @@
-# React + TypeScript + Vite
+# It Worked On My Machine™
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A tongue-in-cheek incident excuse and badge generator for developers. Generate a random excuse, customize its incident badge, then copy a chat-ready status update or download the badge as a PNG.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Generate from excuses covering infrastructure, frontend, backend, and cosmic incidents.
+- Customize the developer name, incident or Jira ID, and badge theme.
+- Choose from Hazard Amber, Prod Down Red, and Matrix Green themes.
+- Copy a formatted message for sharing in chat.
+- Export a high-resolution PNG badge.
 
-## React Compiler
+## Getting started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Install a compatible version of Node.js, then install dependencies and start the development server:
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Open the local URL printed by Vite in your browser.
+
+## Available scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the Vite development server. |
+| `npm run build` | Type-check the project and create a production build in `dist/`. |
+| `npm run preview` | Preview the production build locally. |
+| `npm run lint` | Run Oxlint. |
+
+## Tech stack
+
+React, TypeScript, Vite, Tailwind CSS, and Lucide icons. Badge images are generated in the browser with `html-to-image`.
